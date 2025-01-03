@@ -1,0 +1,24 @@
+.sidebar {
+  background-color: #111111;
+  height: 100vh;
+  position: fixed;
+  width: 280px;
+}
+
+.sidebar a {
+  color: #fff;
+}
+
+.sidebar .nav-link {
+  padding: 10px 20px;
+}
+
+.sidebar .nav-link.active {
+  background-color: #3b82f6;
+  border-radius: 4px;
+}
+
+.top-right-nav {
+  margin-left: 280px;
+  width: calc(100vw - 297px);
+}
