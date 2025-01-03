@@ -50,21 +50,28 @@
             <hr />
             <h2 class="mt-5 mb-2 fw-bold">Welcome back!</h2>
             <p class="mb-4">Please login with your email and password below</p>
-            <form>
+            <form id="loginForm">
               <div class="mb-3">
                 <label for="email" class="form-label fw-bold">Email</label>
-                <input type="email" class="form-control input" id="email" required />
+                <input type="email" value="user@gmail.com" class="form-control input" id="email" required />
               </div>
               <div class="mb-2">
                 <label for="password" class="form-label fw-bold">Password</label>
                 <div class="input-group">
-                  <input type="password" class="form-control input border border-end-0" id="password" required />
+                  <input
+                    type="password"
+                    value="123"
+                    class="form-control input border border-end-0"
+                    id="password"
+                    required
+                  />
                   <button class="btn border border-start-0" type="button">
                     <img src="./assets/image/eye-icon.svg" alt="" />
                   </button>
                 </div>
               </div>
               <a href="#" class="forgot-password fw-bold text-decoration-none">Forgot password?</a>
+              <div id="warning" class="text-danger mt-2" style="display: none">Invalid email or password</div>
               <button type="submit" class="btn btn-primary w-100 mt-4 p-2 rounded-3 fw-bold">Login</button>
             </form>
             <div class="mt-5">
@@ -85,5 +92,20 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.getElementById('loginForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const validEmail = 'user@gmail.com';
+        const validPassword = '123';
+
+        if (email === validEmail && password === validPassword) {
+          window.location.href = '/pages/customers.html';
+        } else {
+          document.getElementById('warning').style.display = 'block';
+        }
+      });
+    </script>
   </body>
 </html>
