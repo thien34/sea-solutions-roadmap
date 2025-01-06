@@ -25,12 +25,16 @@
         width: 100%;
       }
       .img-container {
-        width: 50vw;
-        height: 100vh;
         object-fit: cover;
       }
       .input {
         height: 45px;
+      }
+      @media (min-width: 768px) {
+        .img-container {
+          width: 50vw;
+          height: 100vh;
+        }
       }
     </style>
   </head>
@@ -38,7 +42,7 @@
     <div class="container-fluid">
       <div class="row">
         <!-- section1: form login -->
-        <div class="col">
+        <div class="col-12 col-md-6">
           <div class="login-container">
             <div class="d-flex mb-5 justify-content-between">
               <img src="./assets/image/logo-auth.svg" alt="" />
@@ -83,7 +87,7 @@
           </div>
         </div>
         <!-- section 2: img login -->
-        <div class="col">
+        <div class="col-12 col-md-6 d-none d-md-block">
           <img src="/assets/image/banner-login.png" class="img-container" />
         </div>
       </div>
