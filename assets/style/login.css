@@ -1,0 +1,23 @@
+body {
+  background-color: #ffffff;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+.login-container {
+  max-width: 370px;
+  margin: 50px auto;
+  width: 100%;
+}
+.img-container {
+  object-fit: cover;
+}
+.input {
+  height: 45px;
+}
+@media (min-width: 768px) {
+  .img-container {
+    width: 50vw;
+    height: 100vh;
+  }
+}
