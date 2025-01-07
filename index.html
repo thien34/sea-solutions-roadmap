@@ -23,11 +23,25 @@
             <div class="d-flex mb-5 justify-content-between align-items-center" style="margin-top: 56px">
               <img src="./assets/image/logo-auth.svg" alt="logo" style="width: 175px" class="d-none d-md-block" />
               <img src="./assets/image/logo-auth-mobile.svg" alt="logo" style="width: 30px" class="d-md-none d-block" />
-              <div class="" style="width: 94px">
-                <select class="form-select">
-                  <option selected value="1">English</option>
-                  <option value="2">Italiano</option>
-                </select>
+              <!-- select box -->
+              <div class="custom-select">
+                <div class="select-box" onclick="toggleOptions('flagSelect')">
+                  <div class="select-content">
+                    <img src="https://flagcdn.com/w20/us.png" class="flag" alt="US flag" />
+                    <span>Eng</span>
+                  </div>
+                  <img src="./assets/image/arrow-bot.svg" />
+                </div>
+                <div class="options" id="flagSelect">
+                  <div class="option" onclick="selectOption(this, 'flagSelect')">
+                    <img src="https://flagcdn.com/w20/us.png" class="flag" alt="US flag" />
+                    <span>English</span>
+                  </div>
+                  <div class="option" onclick="selectOption(this, 'flagSelect')">
+                    <img src="https://flagcdn.com/w20/it.png" class="flag" alt="Italy flag" />
+                    <span>Italiano</span>
+                  </div>
+                </div>
               </div>
             </div>
             <hr class="d-none d-md-block" style="color: rgb(176, 176, 176)" />
@@ -102,6 +116,41 @@
           toggleIcon.classList.remove('bi-eye-slash');
           toggleIcon.classList.add('bi-eye');
         }
+      });
+    </script>
+    <script>
+      function toggleOptions(id) {
+        const options = document.getElementById(id);
+        const allOptions = document.querySelectorAll('.options');
+
+        // Close all other option lists
+        allOptions.forEach((opt) => {
+          if (opt.id !== id) {
+            opt.style.display = 'none';
+          }
+        });
+
+        // Toggle current options
+        options.style.display = options.style.display === 'block' ? 'none' : 'block';
+      }
+
+      function selectOption(option, selectId) {
+        const select = document.querySelector(`#${selectId}`);
+        const selectBox = select.previousElementSibling;
+        const content = selectBox.querySelector('.select-content');
+        content.innerHTML =
+          option.querySelector('img').outerHTML + option.querySelector('span').textContent.substring(0, 3);
+        select.style.display = 'none';
+      }
+
+      // Close options when clicking outside
+      document.addEventListener('click', function (e) {
+        const selects = document.querySelectorAll('.custom-select');
+        selects.forEach((select) => {
+          if (!select.contains(e.target)) {
+            select.querySelector('.options').style.display = 'none';
+          }
+        });
       });
     </script>
   </body>
