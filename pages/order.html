@@ -18,25 +18,38 @@
   <body>
     <!-- nav -->
     <div class="">
-      <div class="sidebar">
-        <img src="../assets/image/logo.svg" class="pt-4" width="174px" style="margin-left: 14px" />
+      <div class="sidebar" id="sidebar">
+        <div class="d-flex justify-content-between align-items-center px-3 pt-4">
+          <img src="../assets/image/logo.svg" id="logo" width="174px" />
+          <button id="toggleSidebar" class="btn-nav">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
         <hr style="color: #ffffff" class="mt-4" />
         <div class="mx-3" style="margin-top: 35px">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="bi bi-house-door me-1"></i> Dashboard </a>
+              <a class="nav-link" href="#"
+                ><i class="bi bi-house-door me-1"></i> <span class="nav-label">Dashboard</span></a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/pages/order.html"><i class="bi bi-cart me-1"></i> Orders </a>
+              <a class="nav-link" href="/pages/order.html"
+                ><i class="bi bi-cart me-1"></i> <span class="nav-label">Orders</span></a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pages/customers.html"><i class="bi bi-people me-1"></i> Customers </a>
+              <a class="nav-link active" href="/pages/customers.html"
+                ><i class="bi bi-people me-1"></i> <span class="nav-label">Customers</span></a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="bi bi-palette me-1"></i> Fabrics </a>
+              <a class="nav-link" href="#"><i class="bi bi-palette me-1"></i> <span class="nav-label">Fabrics</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="bi bi-tags me-1"></i> Manufacturers </a>
+              <a class="nav-link" href="#"
+                ><i class="bi bi-tags me-1"></i> <span class="nav-label">Manufacturers</span></a
+              >
             </li>
           </ul>
         </div>
@@ -50,7 +63,7 @@
               </button>
               <input type="text" class="form-control border border-start-0" placeholder="Search" />
             </div>
-            <div class="d-flex">
+            <div class="d-flex me-3">
               <div class="pe-4 border-end">
                 <i class="bi bi-gear fs-4 me-1"></i>
                 <i class="bi bi-patch-question fs-4"></i>
@@ -81,5 +94,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="/index.js"></script>
   </body>
 </html>

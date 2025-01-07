@@ -27,3 +27,15 @@
   z-index: 1000;
   background-color: white;
 }
+
+.btn-nav {
+  background: transparent;
+  color: rgb(144, 144, 144);
+  border: 1px solid rgb(109, 109, 109);
+  border-radius: 4px;
+  padding: 0px 4px;
+}
+
+.sidebar.collapsed {
+  width: 77px;
+}
