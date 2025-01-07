@@ -11,6 +11,7 @@
 
 .sidebar .nav-link {
   padding: 10px 20px;
+  margin: auto;
 }
 
 .sidebar .nav-link.active {
@@ -31,11 +32,24 @@
 .btn-nav {
   background: transparent;
   color: rgb(144, 144, 144);
+  background-color: #111111;
   border: 1px solid rgb(109, 109, 109);
   border-radius: 4px;
   padding: 0px 4px;
+  z-index: 1000;
 }
 
 .sidebar.collapsed {
   width: 77px;
+}
+
+main {
+  margin-left: 280px;
+  padding: 30px;
+  background-color: #eff3f8;
+}
+.nav-link {
+  padding: 10px 12px !important;
+  font-size: 15px;
+  padding-left: 14px !important;
 }

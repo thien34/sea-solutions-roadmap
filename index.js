@@ -5,6 +5,9 @@ document.getElementById('toggleSidebar').addEventListener('click', function () {
   var topNav = document.querySelector('.top-right-nav');
   var labels = document.querySelectorAll('.nav-label');
   sidebar.classList.toggle('collapsed');
+
+  var toggleSidebar = document.getElementById('toggleSidebar');
+
   if (sidebar.classList.contains('collapsed')) {
     logo.src = '../assets/image/logo-auth-mobile.svg';
     logo.style.width = '25px';
@@ -14,6 +17,10 @@ document.getElementById('toggleSidebar').addEventListener('click', function () {
     labels.forEach(function (label) {
       label.style.display = 'none';
     });
+
+    toggleSidebar.style.position = 'absolute';
+    toggleSidebar.style.top = '67px';
+    toggleSidebar.style.left = '22px';
   } else {
     logo.src = '../assets/image/logo.svg';
     logo.style.width = '174px';
@@ -23,5 +30,7 @@ document.getElementById('toggleSidebar').addEventListener('click', function () {
     labels.forEach(function (label) {
       label.style.display = 'inline';
     });
+
+    toggleSidebar.style.removeProperty('position');
   }
 });
