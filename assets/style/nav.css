@@ -75,7 +75,7 @@ main {
 
   .top-right-nav {
     margin-left: 77px !important;
-    width: calc(100vw - 77px) !important;
+    width: calc(100% - 77px) !important;
   }
 
   #main {

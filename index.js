@@ -26,7 +26,7 @@ document.getElementById('toggleSidebar').addEventListener('click', function () {
     logo.style.width = '25px';
     main.style.marginLeft = '77px';
     topNav.style.marginLeft = '77px';
-    topNav.style.width = `calc(100vw - 77px)`;
+    topNav.style.width = `calc(100% - 77px)`;
     labels.forEach(function (label) {
       label.style.display = 'none';
     });
@@ -39,7 +39,7 @@ document.getElementById('toggleSidebar').addEventListener('click', function () {
     logo.style.width = '174px';
     main.style.marginLeft = '280px';
     topNav.style.marginLeft = '280px';
-    topNav.style.width = `calc(100vw - 280px)`;
+    topNav.style.width = `calc(100% - 280px)`;
     labels.forEach(function (label) {
       label.style.display = 'inline';
     });
