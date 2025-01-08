@@ -1,3 +1,16 @@
+function updateSidebarForMobileView() {
+  var logo = document.getElementById('logo');
+  if (window.innerWidth <= 768) {
+    logo.src = '../assets/image/logo-auth-mobile.svg';
+  }
+  else {
+    logo.src = '../assets/image/logo.svg';
+  }
+}
+
+window.addEventListener('load', updateSidebarForMobileView);
+window.addEventListener('resize', updateSidebarForMobileView);
+
 document.getElementById('toggleSidebar').addEventListener('click', function () {
   var sidebar = document.getElementById('sidebar');
   var logo = document.getElementById('logo');

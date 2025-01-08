@@ -21,16 +21,16 @@
 
 .top-right-nav {
   margin-left: 280px;
-  width: calc(100vw - 280px);
+  width: calc(100% - 280px);
   position: fixed;
-  left: 0;
+  right: 0;
   top: 0;
   z-index: 1000;
   background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .btn-nav {
-  background: transparent;
   color: rgb(144, 144, 144);
   background-color: #111111;
   border: 1px solid rgb(109, 109, 109);
@@ -48,8 +48,43 @@ main {
   padding: 30px;
   background-color: #eff3f8;
 }
+
 .nav-link {
   padding: 10px 12px !important;
   font-size: 15px;
   padding-left: 14px !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 77px !important;
+  }
+
+  .sidebar #logo {
+    width: 25px !important;
+  }
+
+  .nav-label {
+    display: none !important;
+  }
+
+  .top-right-nav {
+    margin-left: 77px !important;
+    width: calc(100vw - 77px) !important;
+  }
+
+  #main {
+    margin-left: 77px !important;
+  }
+
+  #toggleSidebar {
+    position: absolute !important;
+    top: 67px !important;
+    left: 22px !important;
+  }
 }
