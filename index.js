@@ -1,6 +1,6 @@
 function updateSidebarForMobileView() {
   var logo = document.getElementById('logo');
-  if (window.innerWidth <= 768) {
+  if (window.innerWidth <= 1280) {
     logo.src = '../assets/image/logo-auth-mobile.svg';
   }
   else {
