@@ -47,6 +47,7 @@ main {
   margin-left: 280px;
   padding: 30px;
   background-color: #eff3f8;
+  min-height: 100vh;
 }
 
 .nav-link {
@@ -87,4 +88,14 @@ main {
     top: 67px !important;
     left: 22px !important;
   }
+}
+
+.form-control:disabled {
+  background-color: white;
+  color: #979da5;
+}
+
+.switch-btn {
+  width: 42px !important;
+  height: 25px !important;
 }

@@ -82,9 +82,186 @@
 
     <!-- conten page -->
     <main id="main">
-      <div style="margin-top: 80px">
-        <h1>Order</h1>
-        <p>This is the main content of the page.</p>
+      <div style="margin-top: 75px">
+        <!-- nav -->
+        <div class="card mb-3" style="width: fit-content; padding: 7px; border-color: rgb(230, 230, 230)">
+          <div class="d-flex">
+            <i class="bi bi-house-door p-1"></i>
+            <p class="mb-0 p-1">></p>
+            <p class="mb-0 p-1">Orders</p>
+            <p class="mb-0 p-1">></p>
+            <p class="mb-0 p-1">Order ORD17309726485</p>
+          </div>
+        </div>
+        <!-- section: action -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="fw-bold">Order ORD17309726485</h2>
+          <button type="button" class="btn btn-primary fw-bold">
+            <i class="bi bi-download me-1"></i> Download Report
+          </button>
+        </div>
+        <!-- table content -->
+        <div class="border pt-3 px-3 bg-white">
+          <!-- form -->
+          <div class="title">
+            <div class="fw-bold" style="font-size: larger">Details</div>
+            <div class="text-muted" style="font-size: 15px">Add order’s details here.</div>
+          </div>
+          <hr class="text-muted" />
+          <form>
+            <div class="row mb-3 align-items-center" style="max-width: 700px">
+              <label class="col-sm-3 col-form-label fw-semibold" style="font-size: small">Order number</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" value="ORD17309726485" disabled />
+              </div>
+            </div>
+            <hr class="text-muted" />
+            <div class="row mb-3 align-items-center" style="max-width: 700px">
+              <label class="col-sm-3 col-form-label fw-semibold" style="font-size: small">Status</label>
+              <div class="col-sm-9">
+                <span class="badge rounded-1 bg-primary text-white" style="font-size: 11px; padding: 6px"
+                  >Payment expired</span
+                >
+                <button type="button" class="btn btn-link fw-bold" style="font-size: 11px">
+                  Resend payment request
+                </button>
+              </div>
+            </div>
+            <hr class="text-muted" />
+            <div class="row mb-3 align-items-center" style="max-width: 700px">
+              <label class="col-sm-3 col-form-label fw-semibold" style="font-size: small">Created On</label>
+              <div class="col-sm-9">
+                <input type="date" class="form-control" value="2023-10-01" disabled />
+              </div>
+            </div>
+            <hr class="text-muted" />
+            <div class="row mb-3 align-items-center" style="max-width: 700px">
+              <label class="col-sm-3 col-form-label fw-semibold" style="font-size: small"
+                >Agent <span class="text-danger">*</span></label
+              >
+              <div class="col-sm-9">
+                <div class="input-group">
+                  <input type="text" class="form-control input border border-end-0" disabled value="Tra Nguyen" />
+                  <button class="btn border border-start-0" type="button" disabled>
+                    <i class="bi bi-search"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <hr class="text-muted" />
+            <div class="mb-3 align-items-end d-flex">
+              <div class="row" style="max-width: 700px; width: 100%">
+                <label class="col-sm-3 col-form-label fw-semibold" style="font-size: small"
+                  >Customer <span class="text-danger">*</span></label
+                >
+                <div class="col-sm-9">
+                  <div class="input-group">
+                    <input type="text" class="form-control input border border-end-0" disabled value="Thanh Nguyen" />
+                    <button class="btn border border-start-0" type="button" disabled>
+                      <i class="bi bi-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-2">
+                <button type="button" class="btn btn-outline-primary fw-bold">View Customer</button>
+              </div>
+            </div>
+            <hr class="text-muted" />
+            <div class="row mb-3 align-items-center" style="max-width: 700px">
+              <label class="col-sm-3 col-form-label fw-semibold" style="font-size: small">Blockchain</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" disabled />
+              </div>
+            </div>
+            <hr class="text-muted" />
+            <div class="row mb-3 align-items-center" style="max-width: 700px">
+              <label class="col-sm-3 col-form-label fw-semibold" style="font-size: small">Wallet Address</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" disabled />
+              </div>
+            </div>
+            <hr class="text-muted" />
+            <div class="row mb-3 align-items-center" style="max-width: 700px">
+              <label class="col-sm-3 col-form-label fw-semibold" style="font-size: small"
+                >Generate Genunity Certificate</label
+              >
+              <div class="col-sm-9">
+                <div class="form-check form-switch">
+                  <input class="form-check-input switch-btn" type="checkbox" role="switch" disabled />
+                </div>
+              </div>
+            </div>
+            <hr class="text-muted" />
+          </form>
+
+          <!-- table -->
+          <div class="title">
+            <div class="fw-bold" style="font-size: larger">Products</div>
+            <div class="text-muted" style="font-size: 15px">Add products for this order here.</div>
+          </div>
+          <hr class="text-muted" />
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <thead class="table-light">
+                <tr>
+                  <th scope="col">
+                    <div class="d-flex justify-content-between py-2">
+                      <p class="mb-0">Agent</p>
+                      <i class="bi bi-funnel"></i>
+                    </div>
+                  </th>
+                  <th scope="col">
+                    <div class="d-flex justify-content-between py-2">
+                      <p class="mb-0">Name <i class="bi bi-arrow-down-up"></i></p>
+                      <i class="bi bi-funnel"></i>
+                    </div>
+                  </th>
+                  <th scope="col">
+                    <div class="d-flex justify-content-between py-2">
+                      <p class="mb-0">Email <i class="bi bi-arrow-down-up"></i></p>
+                      <i class="bi bi-funnel"></i>
+                    </div>
+                  </th>
+                  <th scope="col">
+                    <div class="d-flex justify-content-between py-2">
+                      <p class="mb-0">Phone number <i class="bi bi-arrow-down-up"></i></p>
+                      <i class="bi bi-funnel"></i>
+                    </div>
+                  </th>
+                  <th scope="col">
+                    <div class="d-flex justify-content-between py-2">
+                      <p class="mb-0">City <i class="bi bi-arrow-down-up"></i></p>
+                      <i class="bi bi-funnel"></i>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Tro nguyen</td>
+                  <td>Thanh Nguyễn</td>
+                  <td>keyz2609+12@gmail.com</td>
+                  <td>394 338 184</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Tra nguyen</td>
+                  <td>Hoàng Duy Khánh</td>
+                  <td>hoangkhanhvn179@gmail.com</td>
+                  <td>967 762 157</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- footer table -->
+        <div class="bg-light">
+          <p class="p-3 fw-bold">In total there are 58 customers.</p>
+        </div>
+        <!--  -->
+        <p class="mb-0" style="margin-top: 100px">DressMeApp © 2022-2025</p>
       </div>
     </main>
 
