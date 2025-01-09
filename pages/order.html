@@ -90,13 +90,16 @@
             <img src="../assets/image/arrow-right.svg" alt="" class="px-2" />
             <p class="mb-0 p-1">Orders</p>
             <img src="../assets/image/arrow-right.svg" alt="" class="px-2" />
-            <p class="mb-0 p-1">Order ORD17309726485</p>
+            <p class="mb-0 p-1 text-truncate">Order <p class="mb-0 d-sm-flex d-none align-items-center">ORD17309726485</p></p>
           </div>
         </div>
         <!-- section: action -->
         <div class="d-flex justify-content-between align-items-center mb-3">
           <h2 class="title-page">Order ORD17309726485</h2>
-          <button type="button" class="btn-page"><i class="bi bi-download me-1"></i> Download Report</button>
+          <button type="button" class="btn-page">
+            <i class="bi bi-download me-sm-2"></i>
+            <p class="mb-0 d-none d-sm-block">Download Report</p>
+          </button>
         </div>
         <!-- table content -->
         <div class="border pt-3 px-3 bg-white">
@@ -147,7 +150,7 @@
               </div>
             </div>
             <hr class="text-muted" />
-            <div class="mb-3 align-items-end d-flex">
+            <div class="mb-3 align-items-end d-flex flex-wrap gap-2">
               <div class="row" style="max-width: 700px; width: 100%">
                 <label class="col-sm-3 col-form-label fw-semibold" style="font-size: small"
                   >Customer <span class="text-danger">*</span></label
@@ -161,7 +164,7 @@
                   </div>
                 </div>
               </div>
-              <div class="ms-2">
+              <div class="">
                 <button type="button" class="btn btn-outline-primary fw-bold">View Customer</button>
               </div>
             </div>

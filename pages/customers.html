@@ -94,13 +94,19 @@
         <!-- section: action -->
         <div class="d-flex justify-content-between align-items-center mb-3">
           <h2 class="title-page">Customers</h2>
-          <button type="button" class="btn-page"><i class="bi bi-plus-lg me-1"></i> Add customer</button>
+          <button type="button" class="btn-page">
+            <i class="bi bi-plus-lg me-sm-1"></i>
+            <p class="mb-0 d-none d-sm-block">Add customer</p>
+          </button>
         </div>
         <!-- table content -->
         <div class="border pt-3" style="background-color: #f8f9fa; box-shadow: 0 4px 24px -2px #8080801a">
           <!-- table header -->
           <div class="px-3 d-flex justify-content-between align-items-center mb-3">
-            <button class="btn-clear"><i class="bi bi-funnel"></i> Clear</button>
+            <button class="btn-clear">
+              <i class="bi bi-funnel me-1"></i>
+              <p>Clear</p>
+            </button>
             <div class="input-group" style="width: 270px">
               <button class="btn border border-end-0 bg-white" type="button">
                 <i class="bi bi-search"></i>
@@ -220,8 +226,8 @@
           </div>
 
           <!-- pageing -->
-          <div class="d-flex justify-content-center align-items-center gap-4 pb-3 bg-white">
-            <p class="text-muted mb-0">Showing 1 to 10 of 58 entries</p>
+          <div class="d-flex flex-wrap justify-content-center align-items-center gap-4 pb-3 bg-white">
+            <p class="text-muted mb-0 d-none d-lg-block">Showing 1 to 10 of 58 entries</p>
             <ul class="paging mb-0">
               <li class="page-item">
                 <a class="page-link" href="#"><img src="../assets/image/arrow-duo-left.svg" alt="" /></a>
