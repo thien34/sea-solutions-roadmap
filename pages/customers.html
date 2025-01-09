@@ -97,51 +97,51 @@
           <button type="button" class="btn-page"><i class="bi bi-plus-lg me-1"></i> Add customer</button>
         </div>
         <!-- table content -->
-        <div class="border pt-3 px-3 bg-white">
+        <div class="border pt-3" style="background-color: #f8f9fa; box-shadow: 0 4px 24px -2px #8080801a">
           <!-- table header -->
-          <div class="d-flex justify-content-between align-items-center mb-3">
-            <button class="btn btn-outline-primary fw-semibold"><i class="bi bi-funnel"></i> Clear</button>
+          <div class="px-3 d-flex justify-content-between align-items-center mb-3">
+            <button class="btn-clear"><i class="bi bi-funnel"></i> Clear</button>
             <div class="input-group" style="width: 270px">
-              <button class="btn border border-end-0" type="button">
+              <button class="btn border border-end-0 bg-white" type="button">
                 <i class="bi bi-search"></i>
               </button>
               <input type="text" class="form-control border border-start-0" placeholder="Search" />
             </div>
           </div>
-
+          <hr style="color: rgb(168, 168, 168)" class="mb-0" />
           <!-- table -->
-          <div class="table-responsive">
+          <div class="table-responsive bg-white">
             <table class="table table-hover">
               <thead class="table-light">
                 <tr>
                   <th scope="col">
-                    <div class="d-flex justify-content-between py-2">
+                    <div class="d-flex py-2">
                       <p class="mb-0">Agent</p>
-                      <i class="bi bi-funnel"></i>
+                      <i class="bi bi-funnel ms-1"></i>
                     </div>
                   </th>
                   <th scope="col">
-                    <div class="d-flex justify-content-between py-2">
-                      <p class="mb-0">Name <i class="bi bi-arrow-down-up"></i></p>
-                      <i class="bi bi-funnel"></i>
+                    <div class="d-flex py-2">
+                      <p class="mb-0">Name</p>
+                      <i class="bi bi-funnel ms-1"></i>
                     </div>
                   </th>
                   <th scope="col">
-                    <div class="d-flex justify-content-between py-2">
-                      <p class="mb-0">Email <i class="bi bi-arrow-down-up"></i></p>
-                      <i class="bi bi-funnel"></i>
+                    <div class="d-flex py-2">
+                      <p class="mb-0">Email</p>
+                      <i class="bi bi-funnel ms-1"></i>
                     </div>
                   </th>
                   <th scope="col">
-                    <div class="d-flex justify-content-between py-2">
-                      <p class="mb-0">Phone number <i class="bi bi-arrow-down-up"></i></p>
-                      <i class="bi bi-funnel"></i>
+                    <div class="d-flex py-2">
+                      <p class="mb-0">Phone number</p>
+                      <i class="bi bi-funnel ms-1"></i>
                     </div>
                   </th>
                   <th scope="col">
-                    <div class="d-flex justify-content-between py-2">
-                      <p class="mb-0">City <i class="bi bi-arrow-down-up"></i></p>
-                      <i class="bi bi-funnel"></i>
+                    <div class="d-flex py-2">
+                      <p class="mb-0">City</p>
+                      <i class="bi bi-funnel ms-1"></i>
                     </div>
                   </th>
                 </tr>
@@ -180,7 +180,12 @@
                   <td>Nguyễn Thanh</td>
                   <td>thanhaao@yopmail.com</td>
                   <td>394 338 184</td>
-                  <td>HANOI</td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <img src="../assets/image/flag-1.svg" class="me-1" />
+                      <p class="mb-0">HANOI</p>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
                   <td>Tro nguyen</td>
@@ -197,24 +202,17 @@
                   <td>Bouvet Island123</td>
                 </tr>
                 <tr>
+                  <td>Tro nguyen</td>
+                  <td>lòng hoàng</td>
+                  <td>longhoang@yopmail.com</td>
+                  <td>234234324</td>
+                  <td>Bouvet Island123</td>
+                </tr>
+                <tr>
                   <td>Tra nguyen</td>
                   <td>gewasd21323 äeadsqweqw111</td>
                   <td>12312osdos@yopmail.com</td>
                   <td>134444442</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>Tro nguyen</td>
-                  <td>adasdwgegwe ádasdad</td>
-                  <td>213oszxc123@yopmail.com</td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>Tro nguyen</td>
-                  <td>ádasd ádasdasd</td>
-                  <td>2131ads@yopmail.com</td>
-                  <td></td>
                   <td></td>
                 </tr>
               </tbody>
@@ -222,19 +220,27 @@
           </div>
 
           <!-- pageing -->
-          <div class="d-flex justify-content-center align-items-center gap-4 mb-3">
+          <div class="d-flex justify-content-center align-items-center gap-4 pb-3 bg-white">
             <p class="text-muted mb-0">Showing 1 to 10 of 58 entries</p>
-            <nav aria-label="Page navigation">
-              <ul class="pagination mb-0">
-                <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                <li class="page-item"><a class="page-link" href="#">5</a></li>
-                <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-              </ul>
-            </nav>
+            <ul class="paging mb-0">
+              <li class="page-item">
+                <a class="page-link" href="#"><img src="../assets/image/arrow-duo-left.svg" alt="" /></a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#"><img src="../assets/image/arrow-left.svg" alt="" /></a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">5</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#"><img src="../assets/image/arrow-duo-right-nav.svg" alt="" /></a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#"><img src="../assets/image/arrow-duo-right.svg" alt="" /></a>
+              </li>
+            </ul>
             <div class="dropdown">
               <button
                 class="btn btn-outline-secondary dropdown-toggle"
@@ -257,7 +263,7 @@
           <p class="p-3 fw-bold">In total there are 58 customers.</p>
         </div>
         <!--  -->
-        <p class="mb-0" style="margin-top: 100px">DressMeApp © 2022-2025</p>
+        <p class="mb-0" style="margin-top: 20px">DressMeApp © 2022-2025</p>
       </div>
     </main>
     <script
