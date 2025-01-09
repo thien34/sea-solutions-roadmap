@@ -189,3 +189,16 @@ td {
   background-color: #eff6ff;
   color: #454eda;
 }
+
+@media screen and (max-width: 768px) {
+  #sidebar {
+    display: none;
+  }
+  #main {
+    margin-left: 0 !important;
+  }
+  .top-right-nav {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+}
