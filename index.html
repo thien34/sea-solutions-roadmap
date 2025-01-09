@@ -48,8 +48,10 @@
               </div>
             </div>
             <hr class="d-none d-md-block" style="color: rgb(176, 176, 176)" />
-            <h2 class="mb-2 fw-bold text-center text-md-start" style="margin-top: 40px">Welcome back!</h2>
-            <p class="mb-4 text-center text-md-start">Please login with your email and password below</p>
+            <div class="mb-4 text-center text-md-start" style="margin-top: 39px">
+              <h2 class="mb-2 title">Welcome back!</h2>
+              <p class="subtitle">Please login with your email and password below</p>
+            </div>
             <form id="loginForm">
               <div class="mb-3">
                 <label for="email" class="form-label fw-bold">Email</label>
@@ -70,13 +72,13 @@
                   </button>
                 </div>
               </div>
-              <a href="#" class="forgot-password fw-bold text-decoration-none">Forgot password?</a>
+              <a href="#" class="forgot-password">Forgot password?</a>
               <div id="warning" class="text-danger mt-2 d-none">Invalid email or password</div>
-              <button type="submit" class="btn btn-primary w-100 mt-4 p-2 rounded-3 fw-bold">Login</button>
+              <button type="submit" class="btn-login">Login</button>
             </form>
             <div class="mt-5">
               <span>Don't have an account? </span>
-              <a href="#" class="fw-bold">Register now</a>
+              <a href="#" class="register-now">Register now</a>
             </div>
           </div>
         </div>
@@ -92,69 +94,6 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <script>
-      document.getElementById('loginForm').addEventListener('submit', function (event) {
-        event.preventDefault();
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
-        const validEmail = 'user@gmail.com';
-        const validPassword = '123';
-
-        if (email === validEmail && password === validPassword) {
-          window.location.href = '/pages/customers.html';
-        } else {
-          document.getElementById('warning').style.display = 'block';
-        }
-      });
-
-      document.getElementById('togglePassword').addEventListener('click', function () {
-        const passwordField = document.getElementById('password');
-        const toggleIcon = document.getElementById('toggleIcon');
-        if (passwordField.type === 'password') {
-          passwordField.type = 'text';
-          toggleIcon.classList.remove('bi-eye');
-          toggleIcon.classList.add('bi-eye-slash');
-        } else {
-          passwordField.type = 'password';
-          toggleIcon.classList.remove('bi-eye-slash');
-          toggleIcon.classList.add('bi-eye');
-        }
-      });
-    </script>
-    <script>
-      function toggleOptions(id) {
-        const options = document.getElementById(id);
-        const allOptions = document.querySelectorAll('.options');
-
-        // Close all other option lists
-        allOptions.forEach((opt) => {
-          if (opt.id !== id) {
-            opt.style.display = 'none';
-          }
-        });
-
-        // Toggle current options
-        options.style.display = options.style.display === 'block' ? 'none' : 'block';
-      }
-
-      function selectOption(option, selectId) {
-        const select = document.querySelector(`#${selectId}`);
-        const selectBox = select.previousElementSibling;
-        const content = selectBox.querySelector('.select-content');
-        content.innerHTML =
-          option.querySelector('img').outerHTML + option.querySelector('span').textContent.substring(0, 3);
-        select.style.display = 'none';
-      }
-
-      // Close options when clicking outside
-      document.addEventListener('click', function (e) {
-        const selects = document.querySelectorAll('.custom-select');
-        selects.forEach((select) => {
-          if (!select.contains(e.target)) {
-            select.querySelector('.options').style.display = 'none';
-          }
-        });
-      });
-    </script>
+    <script src="./index.js"></script>
   </body>
 </html>
