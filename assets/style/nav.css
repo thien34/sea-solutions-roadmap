@@ -27,7 +27,7 @@
   top: 0;
   z-index: 1000;
   background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .btn-nav {
@@ -98,4 +98,32 @@ main {
 .switch-btn {
   width: 42px !important;
   height: 25px !important;
+}
+
+.title-page {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.nav-page {
+  width: fit-content;
+  padding: 7px;
+  border-color: rgb(230, 230, 230);
+  margin-bottom: 14px;
+}
+
+.btn-page {
+  box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f;
+  width: fit-content;
+  align-items: center;
+  text-align: center;
+  display: inline-flex;
+  color: #fff;
+  background: #3b82f6;
+  border: 1px solid #3b82f6;
+  padding: 0.4rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  outline-color: transparent;
+  font-weight: 600;
 }
