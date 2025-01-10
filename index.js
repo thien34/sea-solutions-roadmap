@@ -57,25 +57,19 @@ document.getElementById('toggleSidebar').addEventListener('click', function () {
 
 // Add mobile menu button event listener
 document.getElementById('mobileMenuBtn').addEventListener('click', function () {
-  var sidebar = document.getElementById('sidebar');
-
-  sidebar.classList.toggle('show-mobile');
-
-  if (sidebar.classList.contains('show-mobile')) {
-    sidebar.style.display = 'block';
-    sidebar.style.zIndex = '1001';
-  } else {
-  }
+  var sidebar1 = document.getElementById('sidebar1');
+  sidebar1.style.display = 'block';
+  sidebar1.style.zIndex = '1001';
+  sidebar1.style.width = '300px';
 });
 
 document.addEventListener('click', function (e) {
-  const sidebar = document.getElementById('sidebar');
+  const sidebar = document.getElementById('sidebar1');
   const mobileMenuBtn = document.getElementById('mobileMenuBtn');
 
   if (window.innerWidth <= 768 &&
     !sidebar.contains(e.target) &&
     !mobileMenuBtn.contains(e.target)) {
-    sidebar.classList.remove('show-mobile');
     sidebar.style.display = 'none';
   }
 });

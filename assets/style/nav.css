@@ -63,7 +63,7 @@ main {
 
 @media (max-width: 1280px) {
   .sidebar {
-    width: 77px !important;
+    width: 77px;
   }
 
   .sidebar #logo {
