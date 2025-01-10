@@ -1,18 +1,11 @@
-// page: customer - order
 function updateSidebarForMobileView() {
   var logo = document.getElementById('logo');
-  var sidebar = document.getElementById('sidebar');
 
   if (window.innerWidth <= 1280) {
     logo.src = '../assets/image/logo-auth-mobile.svg';
   }
   else {
     logo.src = '../assets/image/logo.svg';
-  }
-  if (window.innerWidth <= 768) {
-    sidebar.style.display = 'none';
-  } else {
-    sidebar.style.display = 'block';
   }
 }
 

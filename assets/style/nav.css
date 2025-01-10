@@ -194,6 +194,12 @@ td {
   #sidebar {
     display: none;
   }
+  #navbar1 {
+    display: none !important;
+  }
+  #navbar2 {
+    display: flex !important;
+  }
   #main {
     margin-left: 0 !important;
   }
