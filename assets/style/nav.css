@@ -208,3 +208,7 @@ td {
     width: 100% !important;
   }
 }
+
+#mobileMenuBtn {
+  cursor: pointer;
+}

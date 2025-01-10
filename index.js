@@ -1,11 +1,17 @@
 function updateSidebarForMobileView() {
   var logo = document.getElementById('logo');
-
+  var sidebar = document.getElementById('sidebar');
   if (window.innerWidth <= 1280) {
     logo.src = '../assets/image/logo-auth-mobile.svg';
   }
   else {
     logo.src = '../assets/image/logo.svg';
+  }
+
+  if (window.innerWidth > 768) {
+    sidebar.style.display = 'block';
+  } else {
+    sidebar.style.display = 'none';
   }
 }
 
@@ -46,5 +52,30 @@ document.getElementById('toggleSidebar').addEventListener('click', function () {
     });
 
     toggleSidebar.style.removeProperty('position');
+  }
+});
+
+// Add mobile menu button event listener
+document.getElementById('mobileMenuBtn').addEventListener('click', function () {
+  var sidebar = document.getElementById('sidebar');
+
+  sidebar.classList.toggle('show-mobile');
+
+  if (sidebar.classList.contains('show-mobile')) {
+    sidebar.style.display = 'block';
+    sidebar.style.zIndex = '1001';
+  } else {
+  }
+});
+
+document.addEventListener('click', function (e) {
+  const sidebar = document.getElementById('sidebar');
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+
+  if (window.innerWidth <= 768 &&
+    !sidebar.contains(e.target) &&
+    !mobileMenuBtn.contains(e.target)) {
+    sidebar.classList.remove('show-mobile');
+    sidebar.style.display = 'none';
   }
 });
