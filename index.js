@@ -2,8 +2,6 @@
 function updateSidebarForMobileView() {
   var logo = document.getElementById('logo');
   var sidebar = document.getElementById('sidebar');
-  var main = document.getElementById('main');
-  var topNav = document.querySelector('.top-right-nav');
 
   if (window.innerWidth <= 1280) {
     logo.src = '../assets/image/logo-auth-mobile.svg';
