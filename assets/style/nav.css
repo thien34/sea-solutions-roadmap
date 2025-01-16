@@ -98,11 +98,6 @@ main {
   color: #979da5;
 }
 
-.switch-btn {
-  width: 42px !important;
-  height: 25px;
-}
-
 .title-page {
   font-size: 25px;
   font-weight: 700;
@@ -137,22 +132,6 @@ main {
   font-weight: 700;
 }
 
-.btn-clear {
-  background-color: transparent;
-  color: #3b82f6;
-  vertical-align: bottom;
-  text-align: center;
-  border: 1px solid #3b82f6;
-  padding: 0.475rem 1.25rem;
-  font-size: 15px;
-  border-radius: 6px;
-  outline-color: transparent;
-  font-weight: 700;
-  height: 37px;
-  width: 95px;
-  display: flex;
-}
-
 .table > :not(caption) > * > * {
   padding: 0.7rem;
 }
@@ -165,34 +144,6 @@ th {
 td {
   color: #4b5563;
   font-size: 15px;
-}
-
-.paging {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 0;
-}
-
-.page-item {
-  display: flex;
-  margin: 0 4px;
-  width: 42px;
-  height: 42px;
-  border-radius: 9999px;
-  justify-content: center;
-  align-items: center;
-}
-
-.page-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.page-item.active {
-  background-color: #eff6ff;
-  color: #454eda;
 }
 
 @media screen and (max-width: 768px) {

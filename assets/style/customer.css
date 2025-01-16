@@ -1,0 +1,43 @@
+.btn-clear {
+  background-color: transparent;
+  color: #3b82f6;
+  vertical-align: bottom;
+  text-align: center;
+  border: 1px solid #3b82f6;
+  padding: 0.475rem 1.25rem;
+  font-size: 15px;
+  border-radius: 6px;
+  outline-color: transparent;
+  font-weight: 700;
+  height: 37px;
+  width: 95px;
+  display: flex;
+}
+
+.paging {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.page-item {
+  display: flex;
+  margin: 0 4px;
+  width: 42px;
+  height: 42px;
+  border-radius: 9999px;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-item.active {
+  background-color: #eff6ff;
+  color: #454eda;
+}
