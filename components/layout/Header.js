@@ -4,7 +4,7 @@ class HeaderComponent extends HTMLElement {
     this.innerHTML = `
       <div class="">
         <div class="sidebar" id="sidebar">
-          <div class="d-flex justify-content-between align-items-center px-3 pt-4">
+          <div class="d-flex justify-content-between align-items-center px-3 pt-4" id="sidebarHeader">
             <img src="../assets/image/logo.svg" id="logo" width="174px" class="m-auto m-md-0" />
             <button id="toggleSidebar" class="btn-nav">
               <i class="bi bi-list"></i>

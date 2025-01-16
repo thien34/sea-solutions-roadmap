@@ -51,9 +51,8 @@ main {
 }
 
 .nav-link {
-  padding: 10px 12px !important;
+  padding: 10px 12px 10px 14px !important;
   font-size: 15px;
-  padding-left: 14px !important;
 }
 
 .nav-link:hover,
@@ -64,6 +63,10 @@ main {
 @media (max-width: 1280px) {
   .sidebar {
     width: 77px;
+  }
+
+  #sidebarHeader {
+    margin-left: 7px;
   }
 
   .sidebar #logo {
@@ -84,9 +87,9 @@ main {
   }
 
   #toggleSidebar {
-    position: absolute !important;
-    top: 67px !important;
-    left: 22px !important;
+    position: absolute;
+    top: 67px;
+    left: 22px;
   }
 }
 
@@ -97,7 +100,7 @@ main {
 
 .switch-btn {
   width: 42px !important;
-  height: 25px !important;
+  height: 25px;
 }
 
 .title-page {
@@ -158,6 +161,7 @@ th {
   font-weight: 600;
   font-size: 15px;
 }
+
 td {
   color: #4b5563;
   font-size: 15px;
@@ -179,6 +183,7 @@ td {
   justify-content: center;
   align-items: center;
 }
+
 .page-link {
   display: flex;
   justify-content: center;
@@ -194,15 +199,19 @@ td {
   #sidebar {
     display: none;
   }
+
   #navbar1 {
     display: none !important;
   }
+
   #navbar2 {
     display: flex !important;
   }
+
   #main {
     margin-left: 0 !important;
   }
+
   .top-right-nav {
     margin-left: 0 !important;
     width: 100% !important;
